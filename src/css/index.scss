@@ -1,0 +1,36 @@
+@import './a.scss';
+body{
+	 background: pink;
+}
+
+#content{
+	// background:green;
+	.aa{
+		border:3px solid red;
+		&:before{
+			content:"我是aa的伪元素"
+		}
+	}
+	
+}
+
+
+div.aa{
+	width:88px;
+	height:88px;
+	background:url('1@1x.jpg');
+}
+@media (-webkit-min-device-pixel-ratio:2),(min-device-pixel-ratio:2){
+div.aa{
+	width:88px;
+	height:88px;
+	background:url('1@2x.jpg');
+}
+}
+@media (-webkit-min-device-pixel-ratio:3),(min-device-pixel-ratio:3){
+div.aa{
+	width:88px;
+	height:88px;
+	background:url('1@3x.jpg');
+}
+}
